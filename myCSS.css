@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: teal;
+}
+button {
+    border-width: 0px;
+    background-color: lightcoral;
+    margin:0px;
+    height:25px;
+}
+a {
+    text-decoration: none;
+}
+
+.op{
+    margin:1px;
+    width:50px;
+    height: 25px;
+    border-width: 0px;
+    border-radius: 0px;
+    background-color: lightblue;
+}
+#calc {
+    padding : 10px;
+    margin : 5px;
+}
+
+li{
+    list-style-type: none;
+}
+
+input {
+    padding:0px;
+    height: 25px;
+    border-width: 0px;
+    background-color: lightgreen;
+    color:darkblue;
+}
+
+::-webkit-input-placeholder {
+   color: gray;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: gray;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: gray;  
+}
+
+:-ms-input-placeholder {  
+   color: gray;  
+}
+

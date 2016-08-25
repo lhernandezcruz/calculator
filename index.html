@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" type="text/css" href="myCSS.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Calculator by <a href="https://github.com/lhernandezcruz"> Luis Hernandez Cruz</a> </h1>
+    </div>
+
+    <div id="calc">
+        <button class="op" id="+">+</button>
+        <button class="op" id="-">-</button>
+        <button class="op" id="*">*</button>
+        <button class="op" id="^">^</button>
+        <button class="op" id="( )">( )</button>
+        <button class="op" id="sin( )"> sin()</button>
+        <button class="op" id="cos( )"> cos()</button>
+        <button class="op" id="tan( )"> tan()</button>
+        <button class="op" id="sqrt( )"> sqrt()</button>
+        <button class="op" id="max( , )"> max(,)</button>
+        <button class="op" id="min( , )"> min(,)</button>
+        <button class="op" id="log( )"> log<sub>10</sub>()</button>
+        <button class="op" id="ln( )">ln( )</button>
+        <button class="op" id="pi">&pi;</button>
+    </div>
+    
+    <div>
+        <form id="frm1">
+            <button type="reset"> Reset</button>
+            <input type="text" placeholder="Type Here. Ex: 1 + 2">
+            <button type="submit">Solve</button>
+        </form>
+    </div>
+    <ul>
+        <h2> It currently can: </h2>
+        <li> Add. Ex: 1 + 1 = 2 </li>
+        <li> Subtract. Ex: 2-1= 1</li>
+        <li> Multiply. Ex: 210*2 = 420</li>
+        <li> Divide. Ex: 2/4 = 0.5</li>
+        <li> Use negative numbers. Ex: 1--1 = 2</li>
+        <li> Raise to the power. Ex: 2^3 = 8</li>
+        <li> Do parenthesis. Ex: (1-1)*2 = 0 </li>
+        <li> Sin( ), cos( ), tan( )  (in radians). Ex: cos(2pi) = -1</li>
+        <li> Take square root. Ex: sqrt(4) = 2 </li>
+        <li> Max and min of two numbers. Ex: max( ( 2-3) , (3 ^2 )) = 9</li>
+        <li> Log( ) and ln( ). Ex: log(10^2) = 2</li>
+        <li> Use pi. Ex: 2pi/pi = 2</li>
+        
+    </ul>
+    <h2> About: Uses <a href="https://en.wikipedia.org/wiki/Shunting-yard_algorithm">Shunting-yard algorithm</a> plus extra features that I implemented.</h2>
+    <h6> Bugs: Due to how small numbers are computed by Javascript... sin(pi) is small number rather then 0.</h6>
+
+    
+</body>
+
+</html>
